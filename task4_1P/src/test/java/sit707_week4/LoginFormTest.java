@@ -32,7 +32,7 @@ public class LoginFormTest
 	/*
 	 * Write more test functions below.
 	 */
-	@Test
+    @Test
     public void testEmptyUsernameAndPassword() {
         LoginStatus status = LoginForm.login(null, null);
         Assert.assertFalse("Login should fail with empty username and password", status.isLoginSuccess());
